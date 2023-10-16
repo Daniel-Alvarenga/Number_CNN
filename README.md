@@ -79,4 +79,4 @@ Para utilizar este projeto, siga os passos abaixo:
     
 5. **Execute o `load.py`:** Após configurar o ambiente e instalar as dependências, você pode executar o `load.py` para carregar o modelo treinado e reconhecer dígitos em novas imagens. Use o seguinte comando:    
     `python src/load.py`
-6. **Desenhe na tela** após o carregar da mesma e desenhe um dígito de 0 a 9 e tecle 's', a previsão irá ser exibida no terminal.
+6. **Selecione a tela** após o carregar da mesma e desenhe um dígito de 0 a 9 e tecle 's', a previsão irá ser exibida no terminal.
