@@ -8,28 +8,29 @@ Esse projeto é um sistema de reconhecimento de dígitos manuscritos utilizando 
 
 ## Estrutura de Diretórios
 
-- Number_CNN/
-	- data/
-		-  n0/
-			- n0_1.png
-			- ...
-			- n0_200.png
-		- ...
-		- n9/
-			- n9_1.png
-			- ...
-		  - n9_200.png
-  - models/
-    - modelo0.keras
-    - modelo1.keras
-    - modelo2.keras
-  - src/
-    - main.py
-    - load.py
-    - digits.py
-  - test/
-    - image.py
-
+```
+Number_CNN/
+├── data/
+│   ├── n0/
+│   │   ├── n0_1.png
+│   │   ├── ...
+│   │   └── n0_200.png
+│   ├── ...
+│   └── n9/
+│       ├── n9_1.png
+│       ├── ...
+│       └── n9_200.png
+├── models/
+│   ├── modelo0.keras
+│   ├── modelo1.keras
+│   ├── modelo2.keras
+├── src/
+│   ├── main.py
+│   ├── load.py
+│   └── digits.py
+├── test/
+│   └── image.py
+```
 
 - `data/`: Contém imagens de 64 * 64 pixels dos dígitos manuscritos organizados em subpastas de 0 a 9.
 - `models/`: O local onde o modelos CNNs treinados são salvos.
@@ -55,28 +56,40 @@ O script `digits.py` permite desenhar dígitos na tela e salvá-los como imagens
 Para utilizar este projeto, siga os passos abaixo:
 
 1. **Clone o Repositório:** Para começar, clone o repositório do projeto para o seu sistema local. Use o seguinte comando no terminal:
-    
-    `git clone https://github.com/Daniel-Alvarenga/Number_CNN.git`
+```bash    
+git clone https://github.com/Daniel-Alvarenga/Number_CNN.git
+```
+
     
 2. **Navegue para a Pasta do Projeto:** Navegue para a pasta do projeto usando o comando `cd`. Por exemplo:
-    
-    `cd Number_CNN`
+```bash
+cd Number_CNN
+ ```
     
 3. **Crie um Ambiente Virtual (Opcional):** Recomenda-se criar um ambiente virtual para isolar as dependências deste projeto. Use `venv` (Python 3) ou `virtualenv`:
+ ```bash
+python -m venv venv
+ ```
+
+Ative o ambiente virtual:
     
-    `python -m venv venv`
+
+ - No Windows:
+```bash
+venv\Scripts\activate
+``` 
     
-    Ative o ambiente virtual:
-    
-    - No Windows:        
-        `venv\Scripts\activate`
-        
-    - No macOS e Linux:        
-        `source venv/bin/activate`
-        
-4. **Instale as Dependências:** Certifique-se de que as dependências necessárias estejam instaladas. Você pode usar o `requirements.txt` fornecido para instalar todas as dependências de uma vez:
-    `pip install -r requirements.txt`
-    
-5. **Execute o `load.py`:** Após configurar o ambiente e instalar as dependências, você pode executar o `load.py` para carregar o modelo treinado e reconhecer dígitos em novas imagens. Use o seguinte comando:    
-    `python src/load.py`
-6. **Selecione a tela** após o carregar da mesma e desenhe um dígito de 0 a 9 e tecle 's', a previsão irá ser exibida no terminal.
+ - No macOS e Linux: 
+```bash       
+source venv/bin/activate
+```
+
+1. **Instale as Dependências:** Certifique-se de que as dependências necessárias estejam instaladas. Você pode usar o `requirements.txt` fornecido para instalar todas as dependências de uma vez:
+ ```bash
+ pip install -r requirements.txt
+  ```
+2. **Execute o `load.py`:** Após configurar o ambiente e instalar as dependências, você pode executar o `load.py` para carregar o modelo treinado e reconhecer dígitos em novas imagens. Use o seguinte comando: 
+   ```bash   
+    python src/load.py
+    ```
+3. **Selecione a tela** após o carregar da mesma e desenhe um dígito de 0 a 9 e tecle 's', a previsão irá ser exibida no terminal.
