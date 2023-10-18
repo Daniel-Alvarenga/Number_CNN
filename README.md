@@ -1,6 +1,6 @@
 # Number_CNN
 
-Esse projeto é um sistema de reconhecimento de dígitos manuscritos utilizando uma Convolutional Neural Network (CNN). O sistema permite treinar um modelo CNN para reconhecer dígitos manuscritos de 0 a 9, armazenar o modelo treinado e testá-lo em novas entradas de dígitos desenhados.
+Esse projeto é um sistema de reconhecimento de dígitos manuscritos utilizando uma Convolutional Neural Network (CNN). O sistema permite treinar um modelo CNN para reconhecer dígitos manuscritos de 0 a 9, armazenar o modelo treinado e testá-lo em novas entradas de dígitos desenhados no momento de execução.
 
 <p align="center">
 	<img src="https://github.com/Daniel-Alvarenga/Number_CNN/assets/128755697/8bf78f52-ba7e-4528-98cd-4ddbd0c6e245">
